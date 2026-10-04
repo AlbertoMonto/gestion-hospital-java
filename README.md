@@ -23,7 +23,7 @@ classDiagram
     Unidad <|-- Urgencias
 ```
 
-- **Personas**: `Persona` es la clase base. De ella heredan `Empleado`, `Paciente` y `Estudiante`; de `Empleado`, `Sanitario` y `Gerencia`; y de `Sanitario`, `Medico` y `Enfermero`. Tres niveles de herencia.
+- **Personas**: `Persona` es la clase base. De ella heredan `Empleado`, `Paciente` y `Estudiante`; de `Empleado`, `Sanitario` y `Gerencia`; y de `Sanitario`, `Medico` y `Enfermero`. La cadena más larga tiene cuatro niveles (`Persona` → `Empleado` → `Sanitario` → `Medico`).
 - **Unidades**: `Unidad` es la clase base de las distintas áreas del hospital: `Urgencias`, `Consulta`, `ConsultaExterna`, `UnidadEspecializada`, `Administracion` y `Formacion`.
 - **Resto de clases**: `Hospital`, `Agenda`, `Cita`, `Datos` y `Metodos`.
 
